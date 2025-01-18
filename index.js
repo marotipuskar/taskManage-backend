@@ -9,11 +9,13 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 // https://frontend-task-management-wine.vercel.app/
 // app.use(cors());                 // Allows cross-origin requests from frontend
-app.use(cors({
-  origin: "https://frontend-task-management-wine.vercel.app", // Allow your frontend domain
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
-  credentials: true, // If cookies or authentication are required
-}));
+app.use(cors({ origin: 'https://frontend-task-management-wine.vercel.app' }));
+
+// app.use(cors({
+//   origin: "https://frontend-task-management-wine.vercel.app", // Allow your frontend domain
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+//   credentials: true, // If cookies or authentication are required
+// }));
 // Handle Preflight Requests
 // app.options('*', cors({
 //   origin: "https://frontend-task-management-wine.vercel.app",
